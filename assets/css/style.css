@@ -4,7 +4,7 @@
 
     html{
         scroll-behavior: smooth;
-        animation: fadeInAnimation ease 1s;
+        animation: fadeInAnimation ease 2s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
     }
@@ -14,7 +14,7 @@
         background-image: url("../images/Background/dood.jpg");
         background-position: center;
         background-size: cover;
-        /* background-color: whitesmoke; */
+        background-color: rgb(255, 255, 255);
     
     }   
 
@@ -27,16 +27,16 @@
         }
     }
 
-    .wrapper{
+    #wrapper{
         padding:20px;
         margin: 0 auto;
         width: 1000px;
-        background-color: whitesmoke;
+        background-color: rgb(255, 255, 255);
 
     }
     .container{
         /* background-color: rgb(6, 160, 83); */
-        background-color: whitesmoke;
+        background-color: rgb(255, 255, 255);
         margin:10px;
         /* border-left: 1px solid rgb(51, 50, 50); */
     }
@@ -118,7 +118,8 @@
         width: 600px;
         /* background-color: aquamarine; */
     }
-    p{
+    .aboutAuth p{
+        line-height: 27px;
         letter-spacing: .1px;
         font-weight: 200;
         text-align: justify;
@@ -127,6 +128,7 @@
         padding:15px;
         width: 30em;
         margin-top: -.5em;
+        box-shadow: 6px 5px 5px .5px rgb(72, 162, 203);
         /* border-left:2px solid rgb(73, 73, 73);  */
    
     }
@@ -154,7 +156,7 @@
     }
     .email:hover{
         cursor: pointer;
-        box-shadow:1px 5px 12px 4px rgba(0,0,0,0.5)
+        box-shadow:1px 2px 6px 1px rgba(0,0,0,0.5)
     }
     h5{
         text-align: center;
@@ -186,13 +188,14 @@
         /* background-color: red; */
         margin-top: 11em;
         width: 1000px;
+        height: 400px;
     }
     .aboutContainer{
         /* background-color: aquamarine; */
 
     }
     .authimage{
-        background-color: whitesmoke;
+        background-color: rgb(255, 255, 255);
 
     }
     .aboutwrapper{
@@ -212,8 +215,10 @@
         width: 60em;    
     }
     .abouttext p{
-        background-color: rgb(249, 250, 249);
+        background-color: rgb(255, 255, 255);
         margin-top:-8em;
+        padding:10px;
+        line-height: 30px;
         border-left:2px solid rgb(7, 167, 74);
     }
     .abouttext a{
@@ -235,6 +240,77 @@
 
         
     }
+
+    #about #up{
+        float: right;
+        margin-right: 10px;
+        text-align: justify;
+        text-orientation: upright;
+        font-family: 'Antic Slab', serif;
+        color: rgb(39, 39, 39);
+        font-weight: 600;
+    }
+    #back{
+        margin-top:-20px;
+        margin-right: 2px;
+    }
+    #up{
+        margin-top: -10em;
+    }
+    .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+      
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+      
+      .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+      
+      .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+      
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+      .skills{
+        width: 500px;
+        float: left;
+        margin-left: -2em;
+        
+        /* background-color: aquamarine; */
+      }
+      .skills h1{
+        text-align: left;
+        
+      }
+      .icons ul{
+        padding: 0;
+
+        display: flex;
+        
+      }
+      .icons li{
+        margin:-3px;
+        list-style: none;
+        width: 100px;
+      }
+      .skills .icons img{
+        width: 70px;
+        padding: 10px;
+        
+  
+
 }
 
 
