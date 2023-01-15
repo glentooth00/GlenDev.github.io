@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Poiret+One&display=swap');
+@media (min-width: 1025px){
+
+    html{
+        scroll-behavior: smooth;
+        animation: fadeInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    body{
+        margin: 0;
+        padding:0;
+        background-image: url("../images/Background/dood.jpg");
+        background-position: center;
+        background-size: cover;
+        /* background-color: whitesmoke; */
+    
+    }   
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .wrapper{
+        padding:20px;
+        margin: 0 auto;
+        width: 1000px;
+        background-color: whitesmoke;
+
+    }
+    .container{
+        /* background-color: rgb(6, 160, 83); */
+        background-color: whitesmoke;
+        margin:10px;
+        /* border-left: 1px solid rgb(51, 50, 50); */
+    }
+    .nav{
+        position: relative;
+         
+        /* background-color: pink; */
+    }
+    .nav ul li{
+        
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .nav ul li a{
+        
+        float: left;
+        font-weight: 600;
+        font-family: 'Antic Slab', serif;
+        font-family: 'Poiret One', cursive;
+        font-size: 20px;
+        margin:.5px;
+        padding:10px;
+        color: rgb(14, 12, 12);
+        text-decoration: none;
+        transition: background-color .3s linear;
+    }
+    .nav ul li a:hover{
+        border-bottom: px solid rgb(51, 50, 50);
+        border-radius: 3px;
+        color:rgb(255, 255, 255);
+        cursor: pointer; 
+        background-color:  rgb(22, 120, 211);
+        /* border-bottom: 1px solid rgb(51, 50, 50);  */
+        /* animation-name: fadein;
+        animation-duration: 1s; */
+    }
+
+
+    span{
+        float: right;
+        margin-top: -6em;
+    }
+    #logo{
+        width: 7em;
+        margin-right: 2em;
+    }
+    .author{
+        /* background-color: cadetblue; */
+        margin-top: -1em;
+        margin: 0 auto;
+        padding: 25px;
+        position: relative;
+        display: flex;
+        /* border-bottom:2px solid rgb(43, 43, 43); */
+        width:1000px;
+        
+    }
+
+    .image{
+        margin-top: 4em;
+        position: relative;
+        /* display: inline-block; */
+        /* width: 500px;
+        background-color: aquamarine; */
+    }
+    .image img{
+        padding: 20px;
+        width: 15em;
+        /* background-color: cornflowerblue; */
+    }
+    .aboutAuth{
+        color:rgb(24, 23, 23);
+        font-family: 'Antic Slab', serif;
+        /* margin-top: 1em; */
+        font-size: 20px;
+        padding: 10px;
+        
+        width: 600px;
+        /* background-color: aquamarine; */
+    }
+    p{
+        letter-spacing: .1px;
+        font-weight: 200;
+        text-align: justify;
+        text-indent: 50px;
+        background-color: rgb(221, 244, 255);
+        padding:15px;
+        width: 30em;
+        margin-top: -.5em;
+        /* border-left:2px solid rgb(73, 73, 73);  */
+   
+    }
+    .email{
+        
+        float:right;
+        color:white;
+        margin-top: 2em;
+        padding:15px;
+        width: 10em;
+        border-radius: 5px;
+        outline: none;
+        border-style: none;
+        background-color:  rgb(22, 120, 211);
+        transition: background-color .3s linear;
+    }
+    h1{
+        color: rgb(71, 70, 70);
+        /* background-color: red; */
+        text-align: center;
+        font-size: 2em;
+        position: relative;
+        
+
+    }
+    .email:hover{
+        cursor: pointer;
+        box-shadow:1px 5px 12px 4px rgba(0,0,0,0.5)
+    }
+    h5{
+        text-align: center;
+        font-size: 15px;
+    }
+    .aboutAuth a{
+        color:rgb(7, 100, 240);
+        text-decoration: none;
+    }
+    .aboutAuth a:hover{
+        text-decoration: underline; 
+    }
+    #wave{
+        width: 2.5em;
+        height:2.5em;
+        padding:10px;
+        position: relative;
+        float: right;
+        margin-top: .5em;
+
+    }
+    .intro{
+        position: relative;
+        display: flex;
+        /* background-color: blue; */
+        padding:0;
+    }
+    #about{
+        /* background-color: red; */
+        margin-top: 11em;
+        width: 1000px;
+    }
+    .aboutContainer{
+        /* background-color: aquamarine; */
+
+    }
+    .authimage{
+        background-color: whitesmoke;
+
+    }
+    .aboutwrapper{
+        /* background-color: rgb(33, 64, 92); */
+        display: flex;
+    }
+    .abouttext{
+       
+        font-family: 'Antic Slab', serif;
+        letter-spacing: .1px;
+        font-weight: 200;
+        text-align: justify;
+        text-indent: 50px;
+        font-size: 20px;
+        /* background-color: rgb(221, 244, 255); */
+        padding:15px;
+        width: 60em;    
+    }
+    .abouttext p{
+        background-color: rgb(249, 250, 249);
+        margin-top:-8em;
+        border-left:2px solid rgb(7, 167, 74);
+    }
+    .abouttext a{
+        text-decoration: none;
+        color:rgb(22, 120, 211);
+    }
+    .abouttext a:hover{
+        text-decoration:underline;
+    }
+    .authimage{
+      float: right;
+
+    }
+    .authpic{
+        width: 300px;
+        height: 375px;
+        /* margin-left: 10em; */
+        /* background-color: red; */
+
+        
+    }
+}
+
+
+
+ 
+
+/* PHONE VIEW */
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 360px)  {
+    html{
+        animation: fadeInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        overflow-x: hidden;
+    }
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+         }
+    }
+    body {
+        overflow-x: hidden;
+        overflow:unset;
+        /* background-color: red; */
+        padding:0;
+        margin:0;
+    }
+    .wrapper{
+        width: 200px;
+        /* padding:20px;
+        margin: 0 auto;
+        width: 1000px; */
+        background-color: whitesmoke;
+        width: 400px;
+        padding-bottom: 10px;
+    
+    }
+    .container{
+        width: 200px;
+        /* background-color: rgb(6, 160, 83); */
+        /* background-color: whitesmoke; */
+        margin:10px;
+        /* border-left: 1px solid rgb(51, 50, 50); */
+    }
+    .nav{
+        width:300px;
+        position: relative;
+        /* background-color: pink; */
+    }
+    .nav ul li{
+        
+        display: inline-block;
+        font-size: 10px;
+    }
+    .nav ul li a{
+        text-align: left;
+        font-weight: 600;
+        font-family: 'Antic Slab', serif;
+        font-family: 'Poiret One', cursive;
+        margin:.5px;
+        padding:10px;
+
+        color: rgb(14, 12, 12);
+        text-decoration: none;
+        transition: background-color .3s linear;
+    }
+    .nav ul li a:hover{
+        border-radius: 3px;
+        color:rgb(255, 255, 255);
+        cursor: pointer; 
+        background-color:  rgb(22, 120, 211);
+        /* border-bottom: 1px solid rgb(51, 50, 50);  */
+        /* animation-name: fadein;
+        animation-duration: 1s; */
+    }
+    #logo{
+        width: 5em;
+        margin-right: 2em;
+        margin-top: -10em;
+        display: none;
+    }
+    .image img{
+        padding: 20px;
+        width: 8em;
+        margin-left:40px ;
+        margin-right:40px ;
+        margin-bottom:-5px ;
+        /* background-color: cornflowerblue; */
+    
+    }
+    .aboutAuth{
+        color:rgb(24, 23, 23);
+        font-family: 'Antic Slab', serif;
+        margin: 0 auto;
+        font-size: 20px;
+        /* padding: 10px; */
+        width:fit-content;
+        /* background-color: aquamarine; */
+    }
+
+    h1{
+        text-align: center;
+        width: 255px;
+        margin-bottom: 50px;
+        margin-top: -10px;
+        margin-left:-6px;
+        margin-right:55px;
+    }
+    p{
+        
+        padding-top: 15em;
+        font-family: 'Antic Slab', serif;
+        font-size: 10px;
+        font-weight: 200;
+        text-align: justify;
+        text-indent: 50px;
+        background-color: rgb(221, 244, 255);
+        padding:15px;
+        padding-bottom: 5px;
+        width: 200px;
+        margin-top: -5em;
+        
+    
+    }
+    .email{
+        margin-left:55px;
+        margin-right:55px;
+        color:white;
+        margin-top: 10px;
+        padding:10px;
+        width: 9em;
+        border-radius: 5px;
+        outline: none;
+        border-style: none;
+        background-color:  rgb(11, 121, 224);
+        transition: background-color .3s linear;
+    }
+    .email:hover{
+        cursor: pointer;
+        box-shadow:1px 5px 12px 4px rgba(0,0,0,0.5)
+    }
+}
+
+
+
+
