@@ -5,7 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"> -->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+                emailjs.init("J4qCvYy9jlEv4-ZB6");
+            })();
+        </script>
+        <script src="index.js">
+
+        </script>
     <title>Dev GLEN</title>
+
 </head>
 <body>
 <div id="wrapper">
@@ -23,7 +36,7 @@
                         <a href="#">PROJECTS</a>
                     </li> -->
                     <li>
-                        <a href="#">CONTACT</a>
+                        <a href="#contactMe">CONTACT</a>
                     </li>
                                
                 </ul>   
@@ -58,7 +71,7 @@
                     
                     
                 </p>
-                <button class="email">Contact me</button>
+                <a href="#contactMe"><button class="email">Contact me</button></a>
             </div>
             
         </div>
@@ -81,13 +94,13 @@
             </a>
             <div class="aboutContainer">
                
-
+                <h2>About Me</h2>
                 <div class="aboutwrapper">
-
+                   
                     <div class="abouttext">
                         <p>
                             
-                            I love making costumized web pages and web applications. im an IT asscociate, i also do video editing, photoshop, and i love music.
+                            Im passionate with making costumized web pages and web applications. im an IT asscociate, i also do video editing, photoshop, and i love music.
                             Life is a never ending process of learning, That is why during my freetime i code along to Youtube videos to be able to keep up with the latest trends in web programming. 
                             <br>
                             <br>
@@ -98,6 +111,7 @@
                             
                         </p>
                         <div class="skills">
+                            
                             <h1>Skills:</h1>
                             <div class="icons">
                                 <ul>
@@ -108,12 +122,13 @@
                                     <li><img src="assets/images/icons/php.png"></li>
                                     <li><img src="assets/images/icons/composer.png"></li>
                                 </ul>
-                            </div>
                                
+                            </div>
+                            
                         </div>
-                        
+                       
                     </div>
-
+                    
                     <div class="authimage">
                         <img src="assets/images/auth.png" class="authpic">
                     </div>
@@ -122,5 +137,47 @@
             </div>
         </div>
 
+
+
+        <!-- EMAIL SMTP JAVASCRIPT configuration-->
+
+        <a href="#contactMe">
+            <p>
+                <i class="arrow down" id="down"></i><BR>
+                <i class="arrow down" id="down"></i>
+            </p>
+        </a>
+        
+        <div id="contactMe">
+            
+            <div class="contact">
+                <h2>Contact</h2>
+                    <form action="#">
+                        <input type="text" placeholder="name" id="name" autocomplete="off"><br>
+                        <input type="text" placeholder="email" id="email" autocomplete="off" ><br>
+                        <textarea id="message" placeholder="Message" cols="30" rows="10" ></textarea><br>
+                        <button id="btn" onclick="sendMail()">Send email</button>
+                    </form>
+                   
+                    <div class="back">
+                        <a href="#wrapper" id="backTop">Back to top</a>
+                    </div>
+                    <div class="rightside">
+                        <!-- kjk -->
+                    </div>
+            </div>
+
+           
+
+           
+               
+        </div>
+
+
+
     </div>
 </div>
+ 
+</body>
+
+</html>
